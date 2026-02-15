@@ -7,6 +7,7 @@ import { useState } from "react";
 const links = [
   { label: "¿Qué hacemos?", href: "#philosophy" },
   { label: "¿Quiénes somos?", href: "#generations" },
+  { label: "¿Qué temas tratamos?", href: "#topics" },
   { label: "Opiniones", href: "#praises" },
   { label: "Contacto", href: "#contact" },
 ];
