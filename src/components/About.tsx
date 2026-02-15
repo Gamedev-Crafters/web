@@ -36,7 +36,7 @@ export default function About() {
             { title: "Bookclub", desc: "Discusión colectiva de libros, artículos, vídeos..." },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={0.1 * i}>
-              <div className="p-6 rounded-2xl bg-white/30 backdrop-blur-sm border border-white/50 text-center">
+              <div className="p-6 rounded-2xl bg-white/10 border border-white/40 text-center">
                 <h3 className="text-xl font-semibold text-gray-900">
                   {item.title}
                 </h3>
