@@ -1,5 +1,13 @@
 import ScrollReveal from "./ScrollReveal";
 
+interface Member {
+  name: string;
+  image?: string; // URL de la imagen. Si no se pone, usa avatar por defecto.
+  link?: string;  // URL al perfil (LinkedIn, Bluesky, etc.)
+}
+
+const PLACEHOLDER_LINK = "#";
+
 const generationModel = [
   "Cada cierto tiempo entra una nueva generación",
   "La última generación pasa a ser mentora de la siguiente",
@@ -7,23 +15,44 @@ const generationModel = [
   "No hay compromiso, solo ganas de aprender y compartir",
 ];
 
-const generations = [
+const generations: {
+  name: string;
+  label: string;
+  members: Member[];
+  note: string;
+}[] = [
   {
     name: "Generación 0",
     label: "Fundadores",
-    members: ["Ricardo", "Iván", "Ángel"],
+    members: [
+      { name: "Ricardo", link: PLACEHOLDER_LINK },
+      { name: "Iván", link: PLACEHOLDER_LINK },
+      { name: "Ángel", link: PLACEHOLDER_LINK },
+    ],
     note: "Quienes arrancaron la comunidad desde cero.",
   },
   {
     name: "Generación 1",
     label: "Más de 35 personas",
-    members: ["Adrián", "Fran", "Geri", "Javi", "Juan", "Dani"],
+    members: [
+      { name: "Adrián", link: PLACEHOLDER_LINK },
+      { name: "Fran", link: PLACEHOLDER_LINK },
+      { name: "Geri", link: PLACEHOLDER_LINK },
+      { name: "Javi", link: PLACEHOLDER_LINK },
+      { name: "Juan", link: PLACEHOLDER_LINK },
+      { name: "Dani", link: PLACEHOLDER_LINK },
+    ],
     note: "La primera gran remesa. Quienes siguen actives a día de hoy:",
   },
   {
     name: "Generación 2",
     label: "Mentorizada por Gen 1",
-    members: ["Katia", "Joser", "Luna", "Samu"],
+    members: [
+      { name: "Katia", link: PLACEHOLDER_LINK },
+      { name: "Joser", link: PLACEHOLDER_LINK },
+      { name: "Luna", link: PLACEHOLDER_LINK },
+      { name: "Samu", link: PLACEHOLDER_LINK },
+    ],
     note: "Mentorizada por personas que antes fueron mentorizadas. Siguen:",
   },
   {
@@ -33,6 +62,50 @@ const generations = [
     note: "Última incorporación, mentorizada por Gen 1 + Gen 2.",
   },
 ];
+
+// Avatar SVG por defecto: silueta genérica.
+// Se usa cuando el miembro no tiene imagen propia.
+function DefaultAvatar({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="20" cy="20" r="20" fill="#e5e7eb" />
+      <circle cx="20" cy="16" r="7" fill="#9ca3af" />
+      <ellipse cx="20" cy="34" rx="12" ry="10" fill="#9ca3af" />
+    </svg>
+  );
+}
+
+function MemberChip({ member }: { member: Member }) {
+  const content = (
+    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-full hover:bg-gray-200 transition-colors">
+      {member.image ? (
+        <img
+          src={member.image}
+          alt={member.name}
+          className="w-6 h-6 rounded-full object-cover"
+        />
+      ) : (
+        <DefaultAvatar className="w-6 h-6" />
+      )}
+      {member.name}
+    </span>
+  );
+
+  if (member.link && member.link !== "#") {
+    return (
+      <a href={member.link} target="_blank" rel="noopener noreferrer">
+        {content}
+      </a>
+    );
+  }
+
+  return content;
+}
 
 export default function Features() {
   return (
@@ -69,12 +142,7 @@ export default function Features() {
                 {gen.members.length > 0 && (
                   <div className="mt-3 flex flex-wrap gap-2">
                     {gen.members.map((member) => (
-                      <span
-                        key={member}
-                        className="px-3 py-1 bg-gray-100 text-gray-700 text-sm rounded-full"
-                      >
-                        {member}
-                      </span>
+                      <MemberChip key={member.name} member={member} />
                     ))}
                   </div>
                 )}
