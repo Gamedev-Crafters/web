@@ -142,6 +142,23 @@ export default function Topics() {
             })}
           </div>
         </ScrollReveal>
+
+        <ScrollReveal delay={0.2}>
+          <div className="mt-12 max-w-2xl mx-auto text-center">
+            <p className="text-lg text-gray-600 mb-6">
+              Presentamos todo lo que hemos aprendido en esta charla:
+            </p>
+            <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-white/40 shadow-lg">
+              <iframe
+                src="https://www.youtube.com/embed/qtUrM75OpM4"
+                title="Charla Gamedev Crafters"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="absolute inset-0 w-full h-full"
+              />
+            </div>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
