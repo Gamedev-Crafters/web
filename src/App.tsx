@@ -5,14 +5,12 @@ import Features from "./components/Features";
 import Praises from "./components/Praises";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-
-// App es el componente raíz. Ensambla todas las secciones de la web.
-// React renderiza estos componentes en orden, de arriba a abajo,
-// formando la página completa.
+import ParallaxBackground from "./components/ParallaxBackground";
 
 export default function App() {
   return (
     <>
+      <ParallaxBackground />
       <Navbar />
       <main>
         <Hero />
