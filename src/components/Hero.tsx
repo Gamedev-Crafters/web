@@ -113,7 +113,7 @@ export default function Hero() {
 
         <motion.button
           onClick={() => {
-            const target = document.getElementById("philosophy");
+            const target = document.getElementById("generations");
             if (!target) return;
             const start = window.scrollY;
             const end = target.getBoundingClientRect().top + start;

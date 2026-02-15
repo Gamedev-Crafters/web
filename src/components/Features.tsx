@@ -27,7 +27,7 @@ const generations: {
     color: "#e0a815",
     members: [
       { name: "Ricardo", image: "/members/ricardo.jpg", link: "https://www.linkedin.com/in/r-g-v/" },
-      { name: "Iván", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
+      { name: "Iván", image: "/members/ivan.png", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
       { name: "Ángel", link: PLACEHOLDER_LINK },
     ],
     note: "Quienes arrancaron la comunidad.",
@@ -41,7 +41,7 @@ const generations: {
       { name: "Fran", image: "/members/fran.jpg", link: PLACEHOLDER_LINK },
       { name: "Geri", image: "/members/geri.png", link: PLACEHOLDER_LINK },
       { name: "Javi", image: "/members/javi.jpg", link: PLACEHOLDER_LINK },
-      { name: "Juan", image: "/members/juan.jpg", link: PLACEHOLDER_LINK },
+      { name: "Juan", image: "/members/juan.jpg", link: "https://www.linkedin.com/in/juan-albert/" },
       { name: "Dani", link: PLACEHOLDER_LINK },
     ],
     note: "Gente diversa de muchos backgrounds. Siguen actives a día de hoy:",
