@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ScrollReveal from "./ScrollReveal";
 
@@ -86,9 +86,16 @@ export default function Praises() {
     go(current === 0 ? praises.length - 1 : current - 1);
   }
 
-  function next() {
+  const next = useCallback(() => {
     go(current === praises.length - 1 ? 0 : current + 1);
-  }
+  }, [current]);
+
+  // Avance automático cada 8 segundos.
+  // Se reinicia al interactuar manualmente (prev/next/dot).
+  useEffect(() => {
+    const timer = setInterval(next, 8000);
+    return () => clearInterval(timer);
+  }, [next]);
 
   const praise = praises[current];
 
