@@ -44,7 +44,7 @@ const generations: {
       { name: "Juan", image: "/members/juan.jpg", link: "https://www.linkedin.com/in/juan-albert/" },
       { name: "Dani", image: "/members/dani.png", link: "https://knexator.itch.io/" },
     ],
-    note: "Siguen, desde finales de 2022:",
+    note: "Gente diversa de muchos backgrounds. Siguen, desde finales de 2022:",
   },
   {
     name: "Generación 2",
