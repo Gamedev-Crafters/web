@@ -1,6 +1,5 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
 import Features from "./components/Features";
 import Topics from "./components/Topics";
 import Praises from "./components/Praises";
@@ -15,7 +14,6 @@ export default function App() {
       <Navbar />
       <main className="relative z-10">
         <Hero />
-        <About />
         <Features />
         <Topics />
         <Praises />
