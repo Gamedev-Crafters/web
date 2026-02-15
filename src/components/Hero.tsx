@@ -7,7 +7,7 @@ const labels = [
     // Top-right head
     top: "-8%",
     left: "78%",
-    delay: 0.9,
+    delay: 0.4,
     color: "#3b82f6",
   },
   {
@@ -15,7 +15,7 @@ const labels = [
     // Left head
     top: "52%",
     left: "-20%",
-    delay: 1.1,
+    delay: 0.5,
     color: "#a855f7",
   },
   {
@@ -23,7 +23,7 @@ const labels = [
     // Bottom-right head
     top: "90%",
     left: "108%",
-    delay: 1.3,
+    delay: 0.6,
     color: "#22c55e",
   },
 ];
@@ -34,9 +34,9 @@ export default function Hero() {
     target: sectionRef,
     offset: ["start start", "end start"],
   });
-  // Desvanece muy rápido: de opacity 1 a 0 en el primer 10% del scroll de la sección
-  const labelsOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
-  // El fondo oscuro se aclara con el scroll (de 80% a 0% opacidad)
+  // Desvanece muy rápido: de opacity 1 a 0 en el primer 5% del scroll de la sección
+  const labelsOpacity = useTransform(scrollYProgress, [0, 0.05], [1, 0]);
+  // El fondo oscuro se aclara con el scroll
   const bgOpacity = useTransform(scrollYProgress, [0, 0.4], [0.8, 0.2]);
   const bg = useTransform(bgOpacity, (v) => `rgba(17, 24, 39, ${v})`);
 
@@ -55,7 +55,7 @@ export default function Hero() {
             className="w-full h-full"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.4 }}
           />
 
           {labels.map((label) => (
@@ -97,7 +97,7 @@ export default function Hero() {
           className="text-5xl md:text-7xl font-bold tracking-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.4, delay: 0.1 }}
         >
           Gamedev Crafters
         </motion.h1>
@@ -106,7 +106,7 @@ export default function Hero() {
           className="mt-6 text-lg md:text-xl text-gray-300 leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.4, delay: 0.15 }}
         >
           Ingeniería de software aplicada al desarrollo de videojuegos.
           <br />Aprendizaje pragmático, colaborativo y sin prejuicios.
@@ -131,7 +131,7 @@ export default function Hero() {
           className="inline-block mt-10 px-8 py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-full hover:bg-white/30 transition-colors cursor-pointer"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.8, delay: 0.6 }}
+          transition={{ duration: 0.4, delay: 0.3 }}
         >
           Conoce la comunidad
         </motion.button>
