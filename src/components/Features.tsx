@@ -20,10 +20,12 @@ const generations: {
   label: string;
   members: Member[];
   note: string;
+  color: string; // Color del rol en Discord
 }[] = [
   {
     name: "Generación 0",
     label: "Fundadores",
+    color: "#e0a815",
     members: [
       { name: "Ricardo", link: "https://www.linkedin.com/in/r-g-v/" },
       { name: "Iván", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
@@ -34,6 +36,7 @@ const generations: {
   {
     name: "Generación 1",
     label: "Más de 35 personas | Mentorizada por Gen 0",
+    color: "#3b82f6",
     members: [
       { name: "Adrián", link: PLACEHOLDER_LINK },
       { name: "Fran", link: PLACEHOLDER_LINK },
@@ -47,6 +50,7 @@ const generations: {
   {
     name: "Generación 2",
     label: "Buscada a demanda | Mentorizada por Gen 1",
+    color: "#a855f7",
     members: [
       { name: "Katia", link: PLACEHOLDER_LINK },
       { name: "Joser", link: PLACEHOLDER_LINK },
@@ -58,6 +62,7 @@ const generations: {
   {
     name: "Generación 3",
     label: "En curso | Mentorizada por Gen 1 + Gen 2",
+    color: "#22c55e",
     members: [],
     note: "Última incorporación de gente diversa, sobre todo sin mucha experiencia laboral.",
   },
@@ -133,7 +138,10 @@ export default function Features() {
             <ScrollReveal key={gen.name} delay={0.1 * i}>
               <div className="p-6 rounded-2xl bg-white border border-gray-100">
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
-                  <span className="inline-block px-3 py-1 bg-gray-900 text-white text-sm font-semibold rounded-full w-fit">
+                  <span
+                    className="inline-block px-3 py-1 text-white text-sm font-semibold rounded-full w-fit"
+                    style={{ backgroundColor: gen.color }}
+                  >
                     {gen.name}
                   </span>
                   <span className="text-sm text-gray-500">{gen.label}</span>
