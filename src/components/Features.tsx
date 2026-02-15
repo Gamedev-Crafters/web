@@ -44,7 +44,7 @@ const generations: {
       { name: "Juan", image: "/members/juan.jpg", link: "https://www.linkedin.com/in/juan-albert/" },
       { name: "Dani", link: PLACEHOLDER_LINK },
     ],
-    note: "Gente diversa de muchos backgrounds. Siguen actives a día de hoy:",
+    note: "Gente diversa de muchos backgrounds. Siguen:",
   },
   {
     name: "Generación 2",
