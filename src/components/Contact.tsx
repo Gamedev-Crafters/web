@@ -1,5 +1,11 @@
 import ScrollReveal from "./ScrollReveal";
 
+const details = [
+  "Funcionamos en un Discord privado y cerrado",
+  "Se da acceso al entrar en una nueva generación",
+  "Escríbenos si quieres saber más o formar parte de la próxima",
+];
+
 export default function Contact() {
   return (
     <section id="contact" className="py-24 px-6 bg-white">
@@ -10,15 +16,18 @@ export default function Contact() {
           </h2>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
-          <p className="mt-6 text-lg text-gray-600 leading-relaxed">
-            La comunidad funciona en un Discord privado al que se da acceso a
-            cada nueva generación. Si quieres saber más o formar parte de la
-            próxima, escríbenos.
-          </p>
-        </ScrollReveal>
+        <ul className="mt-10 space-y-4 text-left max-w-md mx-auto">
+          {details.map((item, i) => (
+            <ScrollReveal key={i} delay={0.1 * i}>
+              <li className="flex gap-3 items-start text-lg text-gray-600">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-gray-900 shrink-0" />
+                {item}
+              </li>
+            </ScrollReveal>
+          ))}
+        </ul>
 
-        <ScrollReveal delay={0.3}>
+        <ScrollReveal delay={0.4}>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:gamedevcrafters@gmail.com"
@@ -29,7 +38,7 @@ export default function Contact() {
           </div>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.4}>
+        <ScrollReveal delay={0.5}>
           <div className="mt-8 flex justify-center gap-6">
             <a
               href="https://www.linkedin.com/in/r-g-v/"

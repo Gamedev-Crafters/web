@@ -1,5 +1,13 @@
 import ScrollReveal from "./ScrollReveal";
 
+const pillars = [
+  "Acercamos la ingeniería de software a la programación de videojuegos",
+  "Sin jerarquías, sin dogmas, sin aprendizaje forzado",
+  "Un espacio seguro donde crecer juntes",
+  "Quienes más aprenden son quienes enseñan",
+  "Todes aprendemos de todes",
+];
+
 export default function About() {
   return (
     <section id="philosophy" className="py-24 px-6 bg-white">
@@ -10,28 +18,22 @@ export default function About() {
           </h2>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
-          <p className="mt-8 text-lg text-gray-600 text-center leading-relaxed max-w-2xl mx-auto">
-            Somos una comunidad que acerca la ingeniería de software a la
-            programación de videojuegos. Sin jerarquías, sin dogmas, sin
-            aprendizaje forzado. Un espacio seguro donde crecer juntes.
-          </p>
-        </ScrollReveal>
+        <ul className="mt-12 max-w-2xl mx-auto space-y-4">
+          {pillars.map((item, i) => (
+            <ScrollReveal key={i} delay={0.1 * i}>
+              <li className="flex gap-3 items-start text-lg text-gray-600">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-gray-900 shrink-0" />
+                {item}
+              </li>
+            </ScrollReveal>
+          ))}
+        </ul>
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {[
-            {
-              title: "Mentorías circulares",
-              desc: "Quienes más aprenden son quienes enseñan. No hay profes ni alumnes: todes aprendemos de todes.",
-            },
-            {
-              title: "Espacio seguro",
-              desc: "Sin juicios ni competitividad tóxica. Cada persona avanza a su ritmo, con apoyo del grupo.",
-            },
-            {
-              title: "Pragmatismo",
-              desc: "Aprender haciendo. Nada de teoría hueca: proyectos reales, feedback real, crecimiento real.",
-            },
+            { title: "Mentorías circulares", desc: "No hay profes ni alumnes: el conocimiento fluye en todas las direcciones." },
+            { title: "Espacio seguro", desc: "Cada persona avanza a su ritmo, con apoyo del grupo." },
+            { title: "Pragmatismo", desc: "Aprender haciendo: proyectos reales, feedback real." },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={0.1 * i}>
               <div className="p-6 rounded-2xl bg-gray-50 text-center">

@@ -1,5 +1,12 @@
 import ScrollReveal from "./ScrollReveal";
 
+const generationModel = [
+  "Cada cierto tiempo entra una nueva generación",
+  "Mentorizada por quienes ya llevan camino recorrido",
+  "Es natural que algunas personas entren y otras salgan",
+  "Eso forma parte del proceso",
+];
+
 const generations = [
   {
     name: "Generación 0",
@@ -11,13 +18,13 @@ const generations = [
     name: "Generación 1",
     label: "Más de 35 personas",
     members: ["Adrián", "Fran", "Geri", "Javi", "Juan", "Dani"],
-    note: "La primera gran remesa. De más de 35 personas, quienes siguen actives a día de hoy.",
+    note: "La primera gran remesa. Quienes siguen actives a día de hoy.",
   },
   {
     name: "Generación 2",
     label: "Mentorizada por Gen 1",
     members: ["Katia", "Joser", "Luna", "Samu"],
-    note: "La primera generación mentorizada íntegramente por miembres que antes fueron mentorizades.",
+    note: "Mentorizada íntegramente por miembres que antes fueron mentorizades.",
   },
   {
     name: "Generación 3",
@@ -37,14 +44,16 @@ export default function Features() {
           </h2>
         </ScrollReveal>
 
-        <ScrollReveal delay={0.2}>
-          <p className="mt-6 text-lg text-gray-600 text-center max-w-2xl mx-auto">
-            Funcionamos por generaciones. Cada cierto tiempo entra gente nueva,
-            mentorizada por quienes ya llevan camino recorrido. Es natural que
-            algunas personas entren y otras salgan por motivos personales o
-            profesionales: eso forma parte del proceso.
-          </p>
-        </ScrollReveal>
+        <ul className="mt-10 max-w-2xl mx-auto space-y-4">
+          {generationModel.map((item, i) => (
+            <ScrollReveal key={i} delay={0.1 * i}>
+              <li className="flex gap-3 items-start text-lg text-gray-600">
+                <span className="mt-1.5 h-2 w-2 rounded-full bg-gray-900 shrink-0" />
+                {item}
+              </li>
+            </ScrollReveal>
+          ))}
+        </ul>
 
         <div className="mt-16 space-y-8">
           {generations.map((gen, i) => (
