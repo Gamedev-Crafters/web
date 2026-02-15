@@ -34,11 +34,11 @@ const praises: Praise[] = [
   },
   {
     name: "Ismael",
-    text: `En muy poco tiempo he conseguido progresar enormemente en mi carrera como programador. La dedicación de Ángel, Iván y Ricardo, los organizadores del grupo, es excepcional; no solo comparten su enorme conocimiento, sino que también tienen una gran habilidad para explicar conceptos complejos de manera accesible. Es un placer trabajar con ellos porque son personas muy atentas, amables, responsables y sacrificadas.`,
+    text: `En muy poco tiempo he conseguido progresar enormemente en mi carrera como programador. La dedicación de Ángel, Iván y Ricardo, los organizadores del grupo, es excepcional; no solo comparten su enorme conocimiento, sino que también tienen una gran habilidad para explicar conceptos complejos de manera accesible. Es un placer trabajar con ellos porque son personas muy atentas, amables, responsables y sacrificadas. Estoy muy agradecido por haber encontrado este grupo y por la oportunidad de conocer a personas increíbles.`,
   },
   {
     name: "Fran",
-    text: `Más que ayudarnos a superar muros concretos, nos han enseñado una serie de herramientas para afrontar cualquier obstáculo que se nos presente. En lugar de darnos un martillo dorado que no existe para derribar un muro, nos han dado un montón de estrategias para escalar esos muros que sin duda nos encontraremos. Todo lo aprendido me aporta mucha seguridad en lo que hago, y eso desde luego se ve reflejado en la calidad de mi código.`,
+    text: `Más que ayudarnos a superar muros concretos, nos han enseñado una serie de herramientas para afrontar cualquier obstáculo que se nos presente. En lugar de darnos un martillo dorado que no existe para derribar un muro, nos han dado un montón de estrategias para escalar esos muros que sin duda nos encontraremos. Todo lo aprendido me aporta mucha seguridad en lo que hago, y eso desde luego se ve reflejado en la calidad de mi código. Yo desde luego las recomiendo y pienso aprovecharlas al máximo el tiempo que duren.`,
   },
   {
     name: "Paco",
@@ -53,16 +53,8 @@ const praises: Praise[] = [
     text: `Los mentores tienen mucha experiencia de campo, un profundo entendimiento de los conceptos y una gran dedicación dentro de su disponibilidad. Con una mayor dedicación se nos podría dar una enseñanza más personalizada, acoger más grupos que aumenten la variedad y la participación de la comunidad u organizar más proyectos con una supervisión más activa y planificada.`,
   },
   {
-    name: "Ismael",
-    text: `Estoy muy agradecido por haber encontrado este grupo y por la oportunidad de conocer a personas increíbles. Espero que sigan ayudando a otros como lo han hecho conmigo.`,
-  },
-  {
     name: "JaviStark",
     text: `Estaré siempre agradecido a esta oportunidad y a las personas que están siempre ahí para apoyarnos de forma desinteresada y guiarnos en nuestra carrera profesional tanto desde la parte técnica como desde la parte más humana, de comunicación, trabajo en equipo y comunidad.`,
-  },
-  {
-    name: "Fran",
-    text: `Yo desde luego las recomiendo y pienso aprovecharlas al máximo el tiempo que duren.`,
   },
 ];
 
@@ -105,7 +97,7 @@ export default function Praises() {
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-            Lo que dicen quienes han pasado por aquí
+            ¿
           </h2>
         </ScrollReveal>
 
