@@ -8,7 +8,7 @@ const links = [
   { label: "Inicio", href: "#hero" },
   { label: "Filosofía", href: "#philosophy" },
   { label: "Generaciones", href: "#generations" },
-  { label: "Testimonios", href: "#praises" },
+  { label: "Opiniones", href: "#praises" },
   { label: "Contacto", href: "#contact" },
 ];
 
@@ -20,7 +20,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo / nombre */}
         <a href="#hero" className="text-xl font-bold text-gray-900 tracking-tight">
-          GameDev Crafters
+          Gamedev Crafters
         </a>
 
         {/* Links - desktop */}

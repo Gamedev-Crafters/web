@@ -97,7 +97,7 @@ export default function Praises() {
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-            ¿
+            Opiniones
           </h2>
         </ScrollReveal>
 
@@ -146,7 +146,7 @@ export default function Praises() {
                   className={`w-2.5 h-2.5 rounded-full transition-colors cursor-pointer ${
                     i === current ? "bg-gray-900" : "bg-gray-300 hover:bg-gray-400"
                   }`}
-                  aria-label={`Testimonio ${i + 1}`}
+                  aria-label={`Opinión ${i + 1}`}
                 />
               ))}
             </div>
