@@ -39,7 +39,7 @@ const generations: {
     members: [
       { name: "Adrián", image: "/members/adri.jpeg", link: PLACEHOLDER_LINK },
       { name: "Fran", image: "/members/fran.jpg", link: PLACEHOLDER_LINK },
-      { name: "Geri", image: "/members/geri.png", link: PLACEHOLDER_LINK },
+      { name: "Geri", image: "/members/geri.png", link: "https://www.linkedin.com/in/gerardgasconmoline/" },
       { name: "Javi", image: "/members/javi.jpg", link: PLACEHOLDER_LINK },
       { name: "Juan", image: "/members/juan.jpg", link: "https://www.linkedin.com/in/juan-albert/" },
       { name: "Dani", link: PLACEHOLDER_LINK },
