@@ -5,9 +5,8 @@ import { useState } from "react";
 // hace scroll suave hasta esa sección.
 
 const links = [
-  { label: "Inicio", href: "#hero" },
-  { label: "Filosofía", href: "#philosophy" },
-  { label: "Generaciones", href: "#generations" },
+  { label: "¿Qué hacemos?", href: "#philosophy" },
+  { label: "¿Quiénes somos?", href: "#generations" },
   { label: "Opiniones", href: "#praises" },
   { label: "Contacto", href: "#contact" },
 ];

@@ -58,6 +58,8 @@ const praises: Praise[] = [
   },
 ];
 
+const palette = ["#e0a815", "#3b82f6", "#a855f7", "#22c55e"];
+
 const slideVariants = {
   enter: (direction: number) => ({
     x: direction > 0 ? 300 : -300,
@@ -110,7 +112,10 @@ export default function Praises() {
 
         <div className="mt-16 relative">
           {/* Carrusel */}
-          <div className="overflow-hidden rounded-2xl bg-white/10 border border-white/40 h-[420px] md:h-[360px]">
+          <div
+            className="overflow-hidden rounded-2xl border border-white/40 h-[420px] md:h-[360px] transition-colors duration-500"
+            style={{ backgroundColor: `${palette[current % palette.length]}18` }}
+          >
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={current}

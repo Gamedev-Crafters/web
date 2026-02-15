@@ -31,12 +31,15 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {[
-            { title: "Mentorías circulares", desc: "Mentorizades devolverán el conocimiento mentorizando" },
-            { title: "Espacio seguro", desc: "Cada persona avanza a su ritmo Jamás se permite juzgar." },
-            { title: "Bookclub", desc: "Discusión colectiva de libros, artículos, vídeos..." },
+            { title: "Mentorías circulares", desc: "Mentorizades devolverán el conocimiento mentorizando", color: "#3b82f6" },
+            { title: "Espacio seguro", desc: "Cada persona avanza a su ritmo Jamás se permite juzgar.", color: "#a855f7" },
+            { title: "Bookclub", desc: "Discusión colectiva de libros, artículos, vídeos...", color: "#22c55e" },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={0.1 * i}>
-              <div className="p-6 rounded-2xl bg-white/10 border border-white/40 text-center">
+              <div
+                className="p-6 rounded-2xl border border-white/40 text-center"
+                style={{ backgroundColor: `${item.color}18` }}
+              >
                 <h3 className="text-xl font-semibold text-gray-900">
                   {item.title}
                 </h3>
