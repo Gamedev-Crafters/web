@@ -11,19 +11,23 @@ const bullets = [
 ];
 
 // Posiciones, colores y animación asignados a mano para máxima dispersión visual.
-// top/left en %, ci = índice en palette, dur = duración flotación, dist = distancia px.
-const topics: { text: string; top: number; left: number; ci: number; dur: number; dist: number }[] = [
-  { text: "TDD",                     top: 5,   left: 25,  dur: 3.2, dist: 7  },
-  { text: "Testing",                 top: 12,  left: 62,  dur: 4.0, dist: 5  },
-  { text: "Diseño",                  top: 4,   left: 82,  dur: 3.6, dist: 8  },
-  { text: "Patrones",                top: 30,  left: 8,   dur: 3.8, dist: 6  },
-  { text: "Arquitectura",            top: 35,  left: 45,  dur: 4.2, dist: 9  },
+// top/left en %, dur = duración flotación, dist = distancia px.
+const topics: { text: string; top: number; left: number; dur: number; dist: number }[] = [
+  { text: "Pair Programming",        top: 3,   left: 3,   dur: 3.3, dist: 6  },
+  { text: "TDD",                     top: 6,   left: 32,  dur: 3.2, dist: 7  },
+  { text: "Assemblies",              top: 10,  left: 55,  dur: 3.8, dist: 5  },
+  { text: "Diseño",                  top: 5,   left: 82,  dur: 3.6, dist: 8  },
+  { text: "Patrones",                top: 25,  left: 10,  dur: 3.8, dist: 6  },
+  { text: "Testing",                 top: 22,  left: 42,  dur: 4.0, dist: 5  },
   { text: "Clean Architecture",      top: 28,  left: 72,  dur: 3.4, dist: 7  },
+  { text: "Arquitectura",            top: 42,  left: 3,   dur: 4.2, dist: 9  },
+  { text: "MVC",                     top: 45,  left: 38,  dur: 3.1, dist: 8  },
+  { text: "Mob Programming",         top: 40,  left: 65,  dur: 4.1, dist: 8  },
   { text: "Hexagonal Architecture",  top: 58,  left: 18,  dur: 3.9, dist: 5  },
-  { text: "MVC",                     top: 55,  left: 55,  dur: 3.1, dist: 8  },
-  { text: "C#",                      top: 62,  left: 82,  dur: 4.4, dist: 6  },
-  { text: "Unity",                   top: 82,  left: 35,  dur: 3.5, dist: 7  },
-  { text: "Godot",                   top: 80,  left: 68,  dur: 3.7, dist: 9  },
+  { text: "C#",                      top: 60,  left: 52,  dur: 4.4, dist: 6  },
+  { text: "DDD",                     top: 62,  left: 78,  dur: 3.4, dist: 7  },
+  { text: "Unity",                   top: 80,  left: 22,  dur: 3.5, dist: 7  },
+  { text: "Godot",                   top: 82,  left: 58,  dur: 3.7, dist: 9  },
 ];
 
 function randomColors() {
@@ -61,7 +65,7 @@ export default function Topics() {
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-            ¿Qué temas tocamos?
+            ¿Qué temas tratamos?
           </h2>
         </ScrollReveal>
 
