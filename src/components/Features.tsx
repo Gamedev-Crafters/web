@@ -86,7 +86,7 @@ function DefaultAvatar({ className }: { className?: string }) {
 
 function MemberChip({ member }: { member: Member }) {
   const content = (
-    <span className="inline-flex flex-col items-center gap-2 p-4 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-colors w-24">
+    <span className="inline-flex flex-col items-center gap-2 p-4 bg-white/20 backdrop-blur-sm border border-white/40 text-gray-700 rounded-xl hover:bg-white/30 transition-colors w-24">
       {member.image ? (
         <img
           src={member.image}
