@@ -31,7 +31,7 @@ export default function Contact() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:gamedevcrafters@gmail.com"
-              className="px-8 py-3 bg-gray-900 text-white font-semibold rounded-full hover:bg-gray-700 transition-colors"
+              className="px-8 py-3 bg-gray-900/60 backdrop-blur-sm border border-gray-700/50 text-white font-semibold rounded-full hover:bg-gray-900/80 transition-colors"
             >
               Escríbenos
             </a>

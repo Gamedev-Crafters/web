@@ -110,7 +110,7 @@ export default function Praises() {
 
         <div className="mt-16 relative">
           {/* Carrusel */}
-          <div className="overflow-hidden rounded-2xl bg-white border border-gray-100 h-[420px] md:h-[360px]">
+          <div className="overflow-hidden rounded-2xl bg-white/30 backdrop-blur-sm border border-white/50 h-[420px] md:h-[360px]">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={current}
