@@ -23,7 +23,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           Ingeniería de software aplicada al desarrollo de videojuegos.
-          Aprendizaje pragmático, colaborativo y sin dogmas.
+          <br />Aprendizaje pragmático, colaborativo y sin dogmas.
         </motion.p>
 
         <motion.a

@@ -25,15 +25,15 @@ const generations: {
     name: "Generación 0",
     label: "Fundadores",
     members: [
-      { name: "Ricardo", link: PLACEHOLDER_LINK },
-      { name: "Iván", link: PLACEHOLDER_LINK },
+      { name: "Ricardo", link: "https://www.linkedin.com/in/r-g-v/" },
+      { name: "Iván", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
       { name: "Ángel", link: PLACEHOLDER_LINK },
     ],
-    note: "Quienes arrancaron la comunidad desde cero.",
+    note: "Quienes arrancaron la comunidad.",
   },
   {
     name: "Generación 1",
-    label: "Más de 35 personas",
+    label: "Más de 35 personas | Mentorizada por Gen 0",
     members: [
       { name: "Adrián", link: PLACEHOLDER_LINK },
       { name: "Fran", link: PLACEHOLDER_LINK },
@@ -42,24 +42,24 @@ const generations: {
       { name: "Juan", link: PLACEHOLDER_LINK },
       { name: "Dani", link: PLACEHOLDER_LINK },
     ],
-    note: "La primera gran remesa. Quienes siguen actives a día de hoy:",
+    note: "Gente diversa de muchos backgrounds. Siguen actives a día de hoy:",
   },
   {
     name: "Generación 2",
-    label: "Mentorizada por Gen 1",
+    label: "Buscada a demanda | Mentorizada por Gen 1",
     members: [
       { name: "Katia", link: PLACEHOLDER_LINK },
       { name: "Joser", link: PLACEHOLDER_LINK },
       { name: "Luna", link: PLACEHOLDER_LINK },
       { name: "Samu", link: PLACEHOLDER_LINK },
     ],
-    note: "Mentorizada por personas que antes fueron mentorizadas. Siguen:",
+    note: "Gente con bastante experiencia profesional anterior. Siguen:",
   },
   {
     name: "Generación 3",
-    label: "En curso",
+    label: "En curso | Mentorizada por Gen 1 + Gen 2",
     members: [],
-    note: "Última incorporación, mentorizada por Gen 1 + Gen 2.",
+    note: "Última incorporación de gente diversa, sobre todo sin mucha experiencia laboral.",
   },
 ];
 

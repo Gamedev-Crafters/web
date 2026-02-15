@@ -2,8 +2,8 @@ import ScrollReveal from "./ScrollReveal";
 
 const pillars = [
   "Acercamos la ingeniería de software a la programación de videojuegos",
-  "Sin jerarquías, sin dogmas, sin aprendizaje forzado",
-  "Un espacio seguro donde crecer juntes",
+  "Sin dogmas, sin titulitis, sin humo, sin aprendizaje forzado",
+  "Se intenta cultivar un espacio seguro e inclusivo",
   "Quienes más aprenden son quienes enseñan",
   "Todes aprendemos de todes",
 ];
@@ -31,9 +31,9 @@ export default function About() {
 
         <div className="grid md:grid-cols-3 gap-8 mt-16">
           {[
-            { title: "Mentorías circulares", desc: "No hay profes ni alumnes: el conocimiento fluye en todas las direcciones." },
-            { title: "Espacio seguro", desc: "Cada persona avanza a su ritmo, con apoyo del grupo." },
-            { title: "Pragmatismo", desc: "Aprender haciendo: proyectos reales, feedback real." },
+            { title: "Mentorías circulares", desc: "Mentorizades devolverán el conocimiento mentorizando" },
+            { title: "Espacio seguro", desc: "Cada persona avanza a su ritmo Jamás se permite juzgar." },
+            { title: "Bookclub", desc: "Discusión colectiva de libros, artículos, vídeos..." },
           ].map((item, i) => (
             <ScrollReveal key={item.title} delay={0.1 * i}>
               <div className="p-6 rounded-2xl bg-gray-50 text-center">
