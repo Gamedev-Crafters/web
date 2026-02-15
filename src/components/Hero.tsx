@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6"
+      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900/80 via-gray-800/75 to-gray-900/80 text-white px-6"
     >
       <div className="max-w-3xl text-center">
         <motion.img
