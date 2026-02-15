@@ -103,7 +103,7 @@ export default function Praises() {
 
         <div className="mt-16 relative">
           {/* Carrusel */}
-          <div className="overflow-hidden rounded-2xl bg-white border border-gray-100 min-h-[280px]">
+          <div className="overflow-hidden rounded-2xl bg-white border border-gray-100 h-[420px] md:h-[360px]">
             <AnimatePresence mode="wait" custom={direction}>
               <motion.div
                 key={current}
@@ -113,12 +113,12 @@ export default function Praises() {
                 animate="center"
                 exit="exit"
                 transition={{ duration: 0.35, ease: "easeInOut" }}
-                className="p-8"
+                className="p-8 h-[420px] md:h-[360px] flex flex-col"
               >
-                <blockquote className="text-gray-600 leading-relaxed whitespace-pre-line">
+                <blockquote className="text-gray-600 leading-relaxed whitespace-pre-line flex-1 overflow-y-auto">
                   {praise.text}
                 </blockquote>
-                <p className="mt-6 font-semibold text-gray-900">
+                <p className="mt-6 font-semibold text-gray-900 shrink-0">
                   — {praise.name}
                 </p>
               </motion.div>
