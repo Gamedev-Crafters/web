@@ -40,8 +40,19 @@ export default function Contact() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:gamedevcrafters@gmail.com"
-              className="px-8 py-3 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-full transition-colors duration-700"
-              style={{ backgroundColor: `${palette[colorIndex]}99` }}
+              className="group px-8 py-3 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-full transition-all duration-700 hover:scale-105 hover:shadow-lg"
+              style={{
+                backgroundColor: `${palette[colorIndex]}99`,
+                boxShadow: `0 0 0px ${palette[colorIndex]}00`,
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.backgroundColor = palette[colorIndex];
+                e.currentTarget.style.boxShadow = `0 0 24px ${palette[colorIndex]}80`;
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.backgroundColor = `${palette[colorIndex]}99`;
+                e.currentTarget.style.boxShadow = `0 0 0px ${palette[colorIndex]}00`;
+              }}
             >
               Escríbenos
             </a>

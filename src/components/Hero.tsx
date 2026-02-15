@@ -39,7 +39,6 @@ export default function Hero() {
   // El fondo oscuro se aclara con el scroll
   const bgOpacity = useTransform(scrollYProgress, [0, 0.4], [0.8, 0.2]);
   const bg = useTransform(bgOpacity, (v) => `rgba(17, 24, 39, ${v})`);
-
   return (
     <motion.section
       ref={sectionRef}
