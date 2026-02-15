@@ -14,7 +14,7 @@ export default function About() {
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
-            Nuestra filosofía
+            ¿Qué hacemos?
           </h2>
         </ScrollReveal>
 
