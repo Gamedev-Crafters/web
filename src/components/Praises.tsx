@@ -102,7 +102,7 @@ export default function Praises() {
   const praise = praises[current];
 
   return (
-    <section id="praises" className="py-24 px-6 bg-gray-50/40 backdrop-blur-xs">
+    <section id="praises" className="py-16 px-6 bg-gray-50/40 backdrop-blur-xs">
       <div className="max-w-3xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">

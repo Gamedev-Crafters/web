@@ -1,4 +1,7 @@
+import { useState, useEffect } from "react";
 import ScrollReveal from "./ScrollReveal";
+
+const palette = ["#e0a815", "#3b82f6", "#a855f7", "#22c55e"];
 
 const details = [
   "Usamos un server de Discord privado y cerrado",
@@ -7,8 +10,14 @@ const details = [
 ];
 
 export default function Contact() {
+  const [colorIndex, setColorIndex] = useState(0);
+  useEffect(() => {
+    const timer = setInterval(() => setColorIndex((i) => (i + 1) % palette.length), 3000);
+    return () => clearInterval(timer);
+  }, []);
+
   return (
-    <section id="contact" className="py-24 px-6 bg-white/40 backdrop-blur-xs">
+    <section id="contact" className="py-16 px-6 bg-white/40 backdrop-blur-xs">
       <div className="max-w-2xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
@@ -31,7 +40,8 @@ export default function Contact() {
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="mailto:gamedevcrafters@gmail.com"
-              className="px-8 py-3 bg-gray-900/60 backdrop-blur-sm border border-gray-700/50 text-white font-semibold rounded-full hover:bg-gray-900/80 transition-colors"
+              className="px-8 py-3 backdrop-blur-sm border border-white/30 text-white font-semibold rounded-full transition-colors duration-700"
+              style={{ backgroundColor: `${palette[colorIndex]}99` }}
             >
               Escríbenos
             </a>

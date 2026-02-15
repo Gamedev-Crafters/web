@@ -12,7 +12,6 @@ const generationModel = [
   "Cada cierto tiempo entra una nueva generación",
   "La última generación pasa a ser mentora de la siguiente",
   "Es natural que algunas personas entren y otras salgan",
-  "No hay compromiso, solo ganas de aprender y compartir",
 ];
 
 const generations: {
@@ -114,7 +113,7 @@ function MemberChip({ member }: { member: Member }) {
 
 export default function Features() {
   return (
-    <section id="generations" className="py-24 px-6 bg-gray-50/40 backdrop-blur-xs">
+    <section id="generations" className="py-16 px-6 bg-gray-50/40 backdrop-blur-xs">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 text-center">
@@ -138,7 +137,7 @@ export default function Features() {
             <ScrollReveal key={gen.name} delay={0.1 * i}>
               <div
                 className="p-6 rounded-2xl border border-gray-100"
-                style={{ backgroundColor: `${gen.color}0a` }}
+                style={{ backgroundColor: `${gen.color}20` }}
               >
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                   <span

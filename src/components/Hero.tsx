@@ -8,7 +8,7 @@ const labels = [
     top: "-8%",
     left: "78%",
     delay: 0.9,
-    color: "#e0a815",
+    color: "#3b82f6",
   },
   {
     text: "gratuitas",
@@ -16,7 +16,7 @@ const labels = [
     top: "52%",
     left: "-20%",
     delay: 1.1,
-    color: "#3b82f6",
+    color: "#a855f7",
   },
   {
     text: "online",
@@ -36,12 +36,16 @@ export default function Hero() {
   });
   // Desvanece muy rápido: de opacity 1 a 0 en el primer 10% del scroll de la sección
   const labelsOpacity = useTransform(scrollYProgress, [0, 0.1], [1, 0]);
+  // El fondo oscuro se aclara con el scroll (de 80% a 0% opacidad)
+  const bgOpacity = useTransform(scrollYProgress, [0, 0.4], [0.8, 0.2]);
+  const bg = useTransform(bgOpacity, (v) => `rgba(17, 24, 39, ${v})`);
 
   return (
-    <section
+    <motion.section
       ref={sectionRef}
       id="hero"
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-900/80 via-gray-800/75 to-gray-900/80 text-white px-6"
+      className="min-h-screen flex items-center justify-center text-white px-6"
+      style={{ backgroundColor: bg }}
     >
       <div className="max-w-3xl text-center">
         <div className="relative w-48 h-48 md:w-72 md:h-72 mx-auto mb-8 overflow-visible">
@@ -132,6 +136,6 @@ export default function Hero() {
           Conoce la comunidad
         </motion.button>
       </div>
-    </section>
+    </motion.section>
   );
 }
