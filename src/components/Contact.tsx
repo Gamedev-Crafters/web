@@ -8,7 +8,7 @@ const details = [
 
 export default function Contact() {
   return (
-    <section id="contact" className="py-24 px-6 bg-white/70 backdrop-blur-sm">
+    <section id="contact" className="py-24 px-6 bg-white/40 backdrop-blur-xs">
       <div className="max-w-2xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
