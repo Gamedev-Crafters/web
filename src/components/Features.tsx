@@ -11,13 +11,13 @@ const generations = [
     name: "Generación 1",
     label: "Más de 35 personas",
     members: ["Adrián", "Fran", "Geri", "Javi", "Juan", "Dani"],
-    note: "La primera gran remesa. De más de 35 personas, quienes siguen activos a día de hoy.",
+    note: "La primera gran remesa. De más de 35 personas, quienes siguen actives a día de hoy.",
   },
   {
     name: "Generación 2",
     label: "Mentorizada por Gen 1",
     members: ["Katia", "Joser", "Luna", "Samu"],
-    note: "La primera generación mentorizada íntegramente por miembros que antes fueron mentorizados.",
+    note: "La primera generación mentorizada íntegramente por miembres que antes fueron mentorizades.",
   },
   {
     name: "Generación 3",

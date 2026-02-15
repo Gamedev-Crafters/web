@@ -6,7 +6,7 @@ export default function Contact() {
       <div className="max-w-2xl mx-auto text-center">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Contacta con nosotros
+            Contacta con nosotres
           </h2>
         </ScrollReveal>
 

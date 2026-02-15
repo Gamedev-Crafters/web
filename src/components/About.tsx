@@ -14,7 +14,7 @@ export default function About() {
           <p className="mt-8 text-lg text-gray-600 text-center leading-relaxed max-w-2xl mx-auto">
             Somos una comunidad que acerca la ingeniería de software a la
             programación de videojuegos. Sin jerarquías, sin dogmas, sin
-            aprendizaje forzado. Un espacio seguro donde crecer juntos.
+            aprendizaje forzado. Un espacio seguro donde crecer juntes.
           </p>
         </ScrollReveal>
 
@@ -22,7 +22,7 @@ export default function About() {
           {[
             {
               title: "Mentorías circulares",
-              desc: "Quienes más aprenden son quienes enseñan. No hay profesores ni alumnos: todos aprendemos de todos.",
+              desc: "Quienes más aprenden son quienes enseñan. No hay profes ni alumnes: todes aprendemos de todes.",
             },
             {
               title: "Espacio seguro",
