@@ -136,7 +136,10 @@ export default function Features() {
         <div className="mt-16 space-y-8">
           {generations.map((gen, i) => (
             <ScrollReveal key={gen.name} delay={0.1 * i}>
-              <div className="p-6 rounded-2xl bg-white border border-gray-100">
+              <div
+                className="p-6 rounded-2xl border border-gray-100"
+                style={{ backgroundColor: `${gen.color}0a` }}
+              >
                 <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                   <span
                     className="inline-block px-3 py-1 text-white text-sm font-semibold rounded-full w-fit"
