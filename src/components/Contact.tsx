@@ -1,9 +1,9 @@
 import ScrollReveal from "./ScrollReveal";
 
 const details = [
-  "Funcionamos en un Discord privado y cerrado",
+  "Usamos un server de Discord privado y cerrado",
   "Se da acceso al entrar en una nueva generación",
-  "Escríbenos si quieres saber más o formar parte de la próxima",
+  "Si quieres saber más o formar parte de la próxima...",
 ];
 
 export default function Contact() {

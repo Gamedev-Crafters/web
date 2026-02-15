@@ -2,9 +2,9 @@ import ScrollReveal from "./ScrollReveal";
 
 const generationModel = [
   "Cada cierto tiempo entra una nueva generación",
-  "Mentorizada por quienes ya llevan camino recorrido",
+  "La última generación pasa a ser mentora de la siguiente",
   "Es natural que algunas personas entren y otras salgan",
-  "Eso forma parte del proceso",
+  "No hay compromiso, solo ganas de aprender y compartir",
 ];
 
 const generations = [
@@ -18,19 +18,19 @@ const generations = [
     name: "Generación 1",
     label: "Más de 35 personas",
     members: ["Adrián", "Fran", "Geri", "Javi", "Juan", "Dani"],
-    note: "La primera gran remesa. Quienes siguen actives a día de hoy.",
+    note: "La primera gran remesa. Quienes siguen actives a día de hoy:",
   },
   {
     name: "Generación 2",
     label: "Mentorizada por Gen 1",
     members: ["Katia", "Joser", "Luna", "Samu"],
-    note: "Mentorizada íntegramente por miembres que antes fueron mentorizades.",
+    note: "Mentorizada por personas que antes fueron mentorizadas. Siguen:",
   },
   {
     name: "Generación 3",
     label: "En curso",
     members: [],
-    note: "Recién incorporada, mentorizada por Gen 1 + Gen 2. El ciclo continúa.",
+    note: "Última incorporación, mentorizada por Gen 1 + Gen 2.",
   },
 ];
 
