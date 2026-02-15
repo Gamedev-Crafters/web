@@ -19,7 +19,8 @@ export default function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo / nombre */}
-        <a href="#hero" className="text-xl font-bold text-gray-900 tracking-tight">
+        <a href="#hero" className="flex items-center gap-2 text-xl font-bold text-gray-900 tracking-tight">
+          <img src="/logo.png" alt="Gamedev Crafters" className="h-8 w-8" />
           Gamedev Crafters
         </a>
 
