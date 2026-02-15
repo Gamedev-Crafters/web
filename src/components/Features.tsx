@@ -42,7 +42,7 @@ const generations: {
       { name: "Geri", image: "/members/geri.png", link: "https://www.linkedin.com/in/gerardgasconmoline/" },
       { name: "Javi", image: "/members/javi.jpg", link: PLACEHOLDER_LINK },
       { name: "Juan", image: "/members/juan.jpg", link: "https://www.linkedin.com/in/juan-albert/" },
-      { name: "Dani", link: PLACEHOLDER_LINK },
+      { name: "Dani", image: "/members/dani.png", link: "https://knexator.itch.io/" },
     ],
     note: "Gente diversa de muchos backgrounds. Siguen:",
   },
@@ -52,7 +52,7 @@ const generations: {
     color: "#a855f7",
     members: [
       { name: "Katia", link: PLACEHOLDER_LINK },
-      { name: "Joser", image: "/members/joser.jpg", link: PLACEHOLDER_LINK },
+      { name: "Joser", image: "/members/joser.jpg", link: "https://joserbala.dev/" },
       { name: "Luna", link: PLACEHOLDER_LINK },
       { name: "Samu", link: PLACEHOLDER_LINK },
     ],
