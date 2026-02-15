@@ -10,7 +10,7 @@ export default function Hero() {
         <motion.img
           src="/logo.png"
           alt=""
-          className="w-28 h-28 md:w-40 md:h-40 mx-auto mb-8"
+          className="w-48 h-48 md:w-72 md:h-72 mx-auto mb-8"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
         >
           Ingeniería de software aplicada al desarrollo de videojuegos.
-          <br />Aprendizaje pragmático, colaborativo y sin dogmas.
+          <br />Aprendizaje pragmático, colaborativo y sin prejuicios.
         </motion.p>
 
         <motion.a
