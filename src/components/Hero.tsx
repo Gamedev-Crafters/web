@@ -1,10 +1,5 @@
 import { motion } from "framer-motion";
 
-// El Hero es la primera sección que ve el usuario.
-// Es grande, llamativa, y establece el tono de la web.
-// Aquí usamos motion directamente (no ScrollReveal) porque
-// queremos que anime al cargar la página, no al hacer scroll.
-
 export default function Hero() {
   return (
     <section
@@ -27,18 +22,18 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
         >
-          Una comunidad de desarrolladores de videojuegos aprendiendo,
-          creando y compartiendo juntos.
+          Ingeniería de software aplicada al desarrollo de videojuegos.
+          Aprendizaje pragmático, colaborativo y sin dogmas.
         </motion.p>
 
         <motion.a
-          href="#about"
+          href="#philosophy"
           className="inline-block mt-10 px-8 py-3 bg-white text-gray-900 font-semibold rounded-full hover:bg-gray-100 transition-colors"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Descubre más
+          Conoce la comunidad
         </motion.a>
       </div>
     </section>
