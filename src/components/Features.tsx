@@ -30,7 +30,7 @@ const generations: {
       { name: "Iván", image: "/members/ivan.png", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
       { name: "Ángel", link: PLACEHOLDER_LINK },
     ],
-    note: "Quienes arrancaron la comunidad.",
+    note: "Arrancaron la comunidad en la Spain Gamejam de 2022. Siguen Iván y Ricardo.",
   },
   {
     name: "Generación 1",
@@ -44,7 +44,7 @@ const generations: {
       { name: "Juan", image: "/members/juan.jpg", link: "https://www.linkedin.com/in/juan-albert/" },
       { name: "Dani", image: "/members/dani.png", link: "https://knexator.itch.io/" },
     ],
-    note: "Gente diversa de muchos backgrounds. Siguen:",
+    note: "Siguen, desde finales de 2022:",
   },
   {
     name: "Generación 2",
