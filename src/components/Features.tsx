@@ -26,7 +26,7 @@ const generations: {
     label: "Fundadores",
     color: "#e0a815",
     members: [
-      { name: "Ricardo", link: "https://www.linkedin.com/in/r-g-v/" },
+      { name: "Ricardo", image: "/members/ricardo.jpg", link: "https://www.linkedin.com/in/r-g-v/" },
       { name: "Iván", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
       { name: "Ángel", link: PLACEHOLDER_LINK },
     ],
@@ -37,11 +37,11 @@ const generations: {
     label: "Más de 35 personas | Mentorizada por Gen 0",
     color: "#3b82f6",
     members: [
-      { name: "Adrián", link: PLACEHOLDER_LINK },
-      { name: "Fran", link: PLACEHOLDER_LINK },
-      { name: "Geri", link: PLACEHOLDER_LINK },
-      { name: "Javi", link: PLACEHOLDER_LINK },
-      { name: "Juan", link: PLACEHOLDER_LINK },
+      { name: "Adrián", image: "/members/adri.jpeg", link: PLACEHOLDER_LINK },
+      { name: "Fran", image: "/members/fran.jpg", link: PLACEHOLDER_LINK },
+      { name: "Geri", image: "/members/geri.png", link: PLACEHOLDER_LINK },
+      { name: "Javi", image: "/members/javi.jpg", link: PLACEHOLDER_LINK },
+      { name: "Juan", image: "/members/juan.jpg", link: PLACEHOLDER_LINK },
       { name: "Dani", link: PLACEHOLDER_LINK },
     ],
     note: "Gente diversa de muchos backgrounds. Siguen actives a día de hoy:",
@@ -52,7 +52,7 @@ const generations: {
     color: "#a855f7",
     members: [
       { name: "Katia", link: PLACEHOLDER_LINK },
-      { name: "Joser", link: PLACEHOLDER_LINK },
+      { name: "Joser", image: "/members/joser.jpg", link: PLACEHOLDER_LINK },
       { name: "Luna", link: PLACEHOLDER_LINK },
       { name: "Samu", link: PLACEHOLDER_LINK },
     ],
@@ -86,17 +86,17 @@ function DefaultAvatar({ className }: { className?: string }) {
 
 function MemberChip({ member }: { member: Member }) {
   const content = (
-    <span className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 text-gray-700 text-sm rounded-full hover:bg-gray-200 transition-colors">
+    <span className="inline-flex flex-col items-center gap-2 p-4 bg-gray-100 text-gray-700 rounded-xl hover:bg-gray-200 transition-colors w-24">
       {member.image ? (
         <img
           src={member.image}
           alt={member.name}
-          className="w-6 h-6 rounded-full object-cover"
+          className="w-16 h-16 rounded-full object-cover"
         />
       ) : (
-        <DefaultAvatar className="w-6 h-6" />
+        <DefaultAvatar className="w-16 h-16 rounded-full" />
       )}
-      {member.name}
+      <span className="font-medium text-sm">{member.name}</span>
     </span>
   );
 
@@ -150,7 +150,7 @@ export default function Features() {
                 </div>
                 <p className="mt-3 text-gray-600">{gen.note}</p>
                 {gen.members.length > 0 && (
-                  <div className="mt-3 flex flex-wrap gap-2">
+                  <div className="mt-4 flex flex-wrap justify-center gap-4">
                     {gen.members.map((member) => (
                       <MemberChip key={member.name} member={member} />
                     ))}
