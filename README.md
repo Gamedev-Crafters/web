@@ -1,3 +1,6 @@
+# Gamedev Crafters Website
+_Repo for web hosted in https://gamedevcrafters.com/_
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
