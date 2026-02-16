@@ -28,7 +28,7 @@ const generations: {
     members: [
       { name: "Ricardo", image: "/members/ricardo.jpg", link: "https://www.linkedin.com/in/r-g-v/" },
       { name: "Iván", image: "/members/ivan.png", link: "https://www.linkedin.com/in/iv%C3%A1n-moreno-garc%C3%ADa-fresneda-9004981bb" },
-      { name: "Ángel", link: PLACEHOLDER_LINK },
+      { name: "Ángel", image: "/members/culo.jpg", link: "https://github.com/Cutremo" },
     ],
     note: "Arrancaron la comunidad en la Spain Gamejam de 2022. Siguen Iván y Ricardo.",
   },
