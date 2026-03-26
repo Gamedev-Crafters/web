@@ -6,7 +6,6 @@ interface Member {
   link?: string;  // URL al perfil (LinkedIn, Bluesky, etc.)
 }
 
-const PLACEHOLDER_LINK = "#";
 
 const generationModel = [
   "Cada cierto tiempo entra una nueva generación",
@@ -48,13 +47,12 @@ const generations: {
   },
   {
     name: "Generación 2",
-    label: "Buscada a demanda | Mentorizada por Gen 1",
+    label: "6 personas buscadas a demanda | Mentorizada por Gen 1",
     color: "#a855f7",
     members: [
       { name: "Katia", image: "/members/katia.png", link: "https://kahsez.com/" },
       { name: "Joser", image: "/members/joser.jpg", link: "https://joserbala.dev/" },
       { name: "Luna", image: "/members/luna.png", link: "https://www.linkedin.com/in/fernando-de-luna-romero-8430183b/" },
-      { name: "Samu", link: PLACEHOLDER_LINK },
     ],
     note: "Gente con bastante experiencia profesional anterior. Siguen:",
   },
